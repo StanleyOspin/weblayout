@@ -58,7 +58,6 @@ img {
 }
 
 body {
-  min-width: 1200px;
   font-family: "Muller", sans-serif;
   background-color: #f1f1f1;
 }
@@ -103,7 +102,7 @@ body {
 .container {
   max-width: 1170px;
   margin: 0 auto;
-}
+ }
 
 .section-title {
   margin: 0;
@@ -204,7 +203,7 @@ body {
 .special-offers-item {
   width: 573px;
   min-height: 278px;
-  padding: 40px 45px;
+  padding: 40px 108px 40px 45px;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 15px;
@@ -506,6 +505,9 @@ body {
   color: #ffffff;
 }
 
+/* .accomodation-button {
+  display: inline-block;
+} */
 /* .accomodation-button {
   padding: 13px 20px;
 } */
