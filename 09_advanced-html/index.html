@@ -343,32 +343,30 @@
         <h2 class="section-title form-title">Хочу тур</h2>
         <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
           <div class="form-wrapper flex">
-            <ul class="form-list list-reset flex">
-              <li class="form-list-item form-select flex">
-                <label class="label-item city-label" for="city">Город вылета</label>
-                <select class="city" id="city" name="city">
-                  <option value="Saint-Petersburg">Санкт-Петербург</option>
-                </select>
-              </li>
-              <li class="form-list-item form-select flex">
-                <label class="label-item country-label" for="country">Страна</label>
-                <select class="country" id="country" name="country">
-                  <option value="Australia">Австралия</option>
-                </select>
-              </li>
-              <li class="form-list-item form-input flex">
-                <label class="label-item" for="date">Дата прибытия</label>
-                <input class="date" id="date" type="date" name="arrival-date" value="2021-10-18">
-              </li>
-              <li class="form-list-item form-input flex">
-                <label class="label-item flex" for="nights">Ночей</label>
-                <input class="nights arrows" id="nights" type="number" name="nights" value="6">
-              </li>
-              <li class="form-list-item form-input flex">
-                <label class="label-item flex" for="tourists">Туристы</label>
-                <input class="tourists arrows" id="tourists" type="number" name="tourists" value="2" required>
-              </li>
-            </ul>
+            <label class="label-item flex">
+              <span class="label-text city">Город вылета</span>
+              <select class="label-select" name="city">
+                <option value="Saint-Petersburg">Санкт-Петербург</option>
+              </select>
+            </label>
+            <label class="label-item flex">
+              <span class="label-text country">Страна</span>
+              <select class="label-select" name="country">
+                <option value="Australia">Австралия</option>
+              </select>
+            </label>
+            <label class="label-item flex">
+              <span class="label-text">Дата прибытия</span>
+              <input class="label-input date" type="date" name="arrival-date" value="2021-10-18">
+            </label>
+            <label class="label-item flex">
+              <span class="label-text">Ночей</span>
+              <input class="label-input nights arrows" type="number" name="nights" value="6">
+            </label>
+            <label class="label-item flex">
+              <span class="label-text">Туристы</span>
+              <input class="label-input tourists arrows" type="number" name="tourists" value="2" required>
+            </label>
             <button class="btn form-button btn-reset" type="submit">Найти</button>
           </div>
         </form>
@@ -377,25 +375,25 @@
     <section id="contacts" class="contacts section-offset">
       <div class="container">
         <h2 class="section-title contacts-section-title">Контакты</h2>
-       <div class="contacts-wrapper contacts-container flex">
+        <div class="contacts-wrapper contacts-container flex">
           <div class="contacts-left flex">
             <ul class="contacts-list list-reset">
               <li class="contacts-list-item flex">
-                <strong class="contacts-title">Адрес</strong>
+                <h3 class="contacts-title">Адрес</h3>
                 <div class="item-text-wrapper">
                   <p class="contacts-item-text address">Москва, улица Юности, <br>дом 5&nbsp;строение&nbsp;4,
                     офис&nbsp;2</p>
                 </div>
               </li>
               <li class="contacts-list-item flex">
-                <strong class="contacts-title">Телефоны</strong>
+                <h3 class="contacts-title">Телефоны</h3>
                 <div class="item-text-wrapper">
                   <a class="contacts-link item-link" href="tel:+7499535-64-34">+7&nbsp;499 535-64-34</a>
                   <a class="contacts-link item-link" href="tel:+7495005-05-44">+7&nbsp;495 005-05-44</a>
                 </div>
               </li>
               <li class="contacts-list-item flex">
-                <strong class="contacts-title">Email</strong>
+                <h3 class="contacts-title">Email</h3>
                 <div class="item-text-wrapper">
                   <a class="contacts-link item-link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
                   <p class="contacts-text">по&nbsp;вопросам бронирования</p>
@@ -404,7 +402,7 @@
                 </div>
               </li>
               <li class="contacts-list-item flex">
-                <strong class="contacts-title">График</strong>
+                <h3 class="contacts-title">График</h3>
                 <div class="item-text-wrapper">
                   <p class="contacts-item-text">Понедельник-пятница, с&nbsp;10:00 до&nbsp;19:00</p>
                 </div>
@@ -425,8 +423,7 @@
           <p class="footer-left-item footer-text">&copy;&nbsp;2012&ndash;2020 Управляющая Объединённой сети
             &laquo;Лагуна Хотелс&raquo;</p>
           <p class="footer-left-item footer-text">Представленная на&nbsp;сайте информация носит справочный характер
-            и&nbsp;не&nbsp;является публичной офертой
-          </p>
+            и&nbsp;не&nbsp;является публичной офертой</p>
           <a class="footer-left-item footer-link">Пользовательское соглашение</a>
         </div>
         <address class="footer-right list-reset flex">
