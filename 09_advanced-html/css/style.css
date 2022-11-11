@@ -529,7 +529,9 @@ body {
 }
 
 .form-wrapper {
-  align-items: stretch;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 31px 28px;
   width: 1080px;
   min-height: 106px;
@@ -537,9 +539,9 @@ body {
   border-radius: 15px;
 }
 
-.label-item:not(:last-child) {
+/* .label-item:not(:last-child) {
   margin-right: 41px;
-}
+} */
 
 .label-item:nth-last-child(2) {
   margin-right: 51px;
@@ -549,18 +551,13 @@ body {
 .label-item {
   margin: 0;
   flex-direction: column;
-  overflow-wrap: break-word;
   min-height: 43px;
 }
 
 .label-text {
-  display: inline-block;
-  overflow-wrap: break-word;
   margin-bottom: 15px;
-  min-height: 12px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 12px;
   color: #000000;
 }
 
@@ -568,7 +565,6 @@ body {
   width: 169px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
   color: #000000;
   border: none;
 }
@@ -578,19 +574,24 @@ body {
   padding-left: 4px;
 }
 
+.city,
+.country,
+.date {
+  max-width: 169px;
+}
+
 .label-input {
   padding: 0;
   width: 121px;
   font-size: 16px;
-  line-height: 16px;
   border: none;
-
   background: #ffffff;
   color: #000000;
 }
 
 .nights,
 .tourists {
+  max-width: 121px;
   border-bottom: 1px solid #e9e9e9;
 }
 
