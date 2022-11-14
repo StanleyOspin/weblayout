@@ -551,6 +551,7 @@ body {
 .label-item {
   margin: 0;
   flex-direction: column;
+  word-break: break-all;
   min-height: 43px;
 }
 
