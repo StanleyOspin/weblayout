@@ -136,7 +136,6 @@ body {
 }
 
 .header-container {
-  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -170,16 +169,19 @@ body {
   padding: 17px 0;
   max-height: 70px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: #ffffff;
   border-radius: 15px;
 }
 
 .navigation-list-item {
-  margin-right: 45px;
   font-weight: 400;
   font-size: 16px;
   color: #666666;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 45px;
 }
 
 .navigation-button:not(:last-child) {
@@ -482,7 +484,7 @@ body {
 
 .accomodation-item-location {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -507,9 +509,9 @@ body {
   color: #ffffff;
 }
 
-/* .accomodation-button {
+.accomodation-button {
   display: inline-block;
-} */
+}
 /* .accomodation-button {
   padding: 13px 20px;
 } */
