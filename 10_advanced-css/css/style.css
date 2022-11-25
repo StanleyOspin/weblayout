@@ -976,8 +976,14 @@ body {
   transition: fill 0.3s ease-in-out;
 }
 
-.footer-item-link:focus {
+.classmates,
+.trip-advicer,
+.vkontakte {
   outline: none;
+}
+
+.footer-item-link:focus {
+
   fill: var(--orange);
 }
 
