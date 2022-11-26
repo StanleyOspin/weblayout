@@ -93,7 +93,7 @@ body {
   border: 1px solid var(--orange);
   background-color: var(--white);
   color: var(--orange);
-  border-radius: 15px;
+  border-radius: 10px;
   outline: none;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
@@ -144,7 +144,7 @@ body {
   top: -3px;
   left: -5px;
   right: -5px;
-  bottom: -0px;
+  bottom: 0px;
   outline: 1px solid var(--orange);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -982,15 +982,14 @@ body {
   outline: none;
 }
 
-.footer-item-link:focus {
-
+.social-link:focus .footer-item-link {
   fill: var(--orange);
 }
 
-.footer-item-link:hover {
+.social-link:hover .footer-item-link {
   fill: var(--orange);
 }
 
-.footer-item-link:active {
+.social-link:active .footer-item-link {
   fill: var(--dark-orange);
 }
