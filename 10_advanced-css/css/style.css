@@ -450,6 +450,10 @@ body {
 }
 
 /* services */
+.services {
+  padding-bottom: 11px;
+}
+
 .services-title {
   margin: 0;
   margin-bottom: 20px;
@@ -458,15 +462,15 @@ body {
 .services-list {
   width: 1170px;
   flex-wrap: wrap;
-  row-gap: 24px;
 }
 
 .services-list-item {
   position: relative;
-  width: 573px;
-  min-height: 330px;
   margin: 0;
   padding: 165px 126px 35px 45px;
+  margin-bottom: 24px;
+  width: 573px;
+  min-height: 330px;
   background-position: top;
   background-repeat: no-repeat;
   background-color: var(--white);
@@ -547,12 +551,16 @@ body {
 }
 
 /* advantages */
+.advantages {
+  padding-bottom: 13px;
+}
+
 .advantages-list {
   flex-wrap: wrap;
-  row-gap: 22px;
 }
 
 .advantages-list-item {
+  margin-bottom: 22px;
   padding: 116px 42px 32px 45px;
   width: 276px;
   min-height: 276px;
@@ -609,12 +617,16 @@ body {
 }
 
 /* accomodation */
+.accomodation {
+  padding-bottom: 11px;
+}
+
 .accomodation-list {
   flex-wrap: wrap;
-  row-gap: 24px;
 }
 
 .accomodation-list-item {
+  margin-bottom: 24px;
   width: 374px;
   min-height: 440px;
   overflow: hidden;
