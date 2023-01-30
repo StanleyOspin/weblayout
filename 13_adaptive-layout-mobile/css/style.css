@@ -107,7 +107,7 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 66px;
+  max-width: 1770px;
 }
 
 .title-1 {
@@ -338,13 +338,11 @@ body {
 }
 
 .slider__content {
-  padding-top: 101px;
-  padding-bottom: 102px;
-  padding-left: 80px;
+  padding: 101px 80px 102px 80px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 55%;
+  width: 65%;
 }
 
 .hero__slider-1 {
@@ -673,7 +671,7 @@ body {
 
 /* faq */
 .faq {
-  margin-bottom: 88px;
+  margin-bottom: 85px;
 }
 
 .faq__container {
@@ -818,7 +816,7 @@ body {
 .footer__container {
   align-items: flex-start;
   justify-content: space-between;
-  padding: 49px 65px;
+  padding: 50px 0;
 }
 
 .footer__left {

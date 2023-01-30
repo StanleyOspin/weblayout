@@ -1,4 +1,14 @@
-@media (max-width: 1601px) {
+@media (max-width: 1645px) {
+  /* global */
+  :root {
+    --font-h1: 60px;
+    --line-height-h1: calc((73 / 60) * 100%);
+    --font-h3: 24px;
+    --line-height-h3: calc((32 / 20) * 100%);
+    --font-faq-sub: 20px;
+    --line-height-faq-sub: calc((32 / 20) * 100%);
+  }
+
   /* header */
   .header__logo {
     margin-right: 100px;
@@ -8,19 +18,24 @@
     margin-right: 65px;
   }
 
-  /* hero */
-  .slider__content {
-    padding-right: 0px;
-    width: 70%;
+
+  .hero__title {
+    font-size: var(--font-h1);
+    line-height: var(--line-height-h1);
+  }
+
+  .hero__text {
+    font-size: 20px;
+    line-height: 120%;
   }
 
   /* about */
   .about__description-left {
-    margin-right: 54px;
+    margin-right: 50px;
   }
 
   .about__left-wrapper {
-    padding: 40px;
+    padding: 35px;
   }
 
   .about__item {
@@ -40,90 +55,63 @@
   }
 }
 
-@media (max-width: 1441px) {
-  /* global */
-  .container {
-    padding: 0 35px;
-  }
 
+@media (max-width: 1470px) {
   /* hero */
   .slider__content {
     width: 75%;
   }
 
   /* about */
-
-  .about__description-left {
-    margin-right: 40px;
+  .about {
+    margin-bottom: 81px;
   }
 
-  /* footer */
-  .footer__container {
-    padding-top: 35px;
-    padding-bottom: 35px;
+  .about__description-main {
+    margin-bottom: 60px;
   }
-}
 
-@media (max-width: 1300px) {
-  /* hero */
-  .slider__content {
-    width: 90%;
+  .about__wrapper {
+    position: relative;
+    flex-wrap: wrap;
   }
-  /* about */
+
   .about__left-wrapper {
-    padding: 50px;
+    padding: 80px;
+  }
+
+  .about__left {
+    margin: 0;
+    margin-bottom: 32px;
+    padding-top: 444px;
+    width: 100%;
+    background-position: unset;
   }
 
   .about__description-left {
-    margin-right: 20px;
+    margin-right: 195px;
   }
 
- .about__item {
-    padding: 30px 20px 30px 220px;
-    background-position: 3.5% 50%;
-  }
-
-  /* footer */
-  .footer__container {
-    padding: 50px;
-  }
-
-  .footer__description {
-    display: none;
-  }
-
-  .footer__label {
-    display: none;
-  }
-
-  .footer__middle {
-    margin: 0;
-    max-width: 541px;
-  }
-
-  .footer__middle {
+  .about__list {
     width: 100%;
   }
 
-  .msg {
-    margin-bottom: 33px;
+  .about__item {
+    padding: 63px 115px 64px 317px;
+    background-position: 10.5% 50%;
+    width: 100%;
   }
 
-  .footer__submit {
-    justify-content: center;
+  .about__item:not(:last-child) {
+    margin-bottom: 31px;
   }
 
-  .footer__btn {
-    margin: 0;
-    padding: 19px 38px;
-  }
 }
 
-@media (max-width: 1025px) {
-
+@media (max-width: 1292px) {
   :root {
     --font-h1: 60px;
-    --line-height-h1: calc((73.14 / 60) * 100%);
+    --line-height-h1: calc((73 / 60) * 100%);
     --font-h3: 24px;
     --line-height-h3: calc((32 / 20) * 100%);
     --font-faq-sub: 20px;
@@ -150,6 +138,7 @@
   }
 
   .header__logo {
+    transform: translateY(2px);
     margin-right: 0;
   }
 
@@ -227,7 +216,7 @@
   }
 
   .hero__text {
-    margin-bottom: 60px;
+    margin-bottom: 62px;
     font-size: 20px;
     line-height: calc((24 / 20) * 100%);
   }
@@ -238,7 +227,7 @@
   }
 
   .about__description-main {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 
   .about__wrapper {
@@ -251,6 +240,11 @@
     margin-bottom: 32px;
     padding-top: 444px;
     width: 100%;
+    background-position: unset;
+  }
+
+  .about__left-wrapper {
+    padding: 50px;
   }
 
   .about__description-left {
@@ -297,13 +291,13 @@
   }
 
   .how-we-work__description {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 
   /* faq */
 
   .faq {
-    margin-bottom: 80px;
+    margin-bottom: 82px;
   }
 
   .faq__button-text {
@@ -316,17 +310,19 @@
     width: 639px;
   }
 
-
   /* footer */
   .footer__container {
     padding: 50px;
   }
 
-
-  /* .footer__description {
+  .footer__description {
     display: none;
   }
 
+  .footer__logo {
+    margin: 0;
+    margin-bottom: 15px;
+  }
 
   .footer__label {
     display: none;
@@ -343,7 +339,7 @@
   }
 
   .msg {
-    margin-bottom: 33px;
+    margin-bottom: 31px;
   }
 
   .footer__submit {
@@ -353,16 +349,32 @@
   .footer__btn {
     margin: 0;
     padding: 19px 38px;
-  } */
+  }
 }
 
 @media (max-width: 951px) {
   :root {
+    --font-h1: 50px;
+    --font-h2: 48px;
+    --font-h3: 24px;
+    --font-descr: 16px;
+    --font-faq-sub: 20px;
     --border-radius: 24px;
   }
 
-  br {
-    display: none;
+  .title-2 {
+    font-size: var(--font-h2);
+    line-height: 120%;
+  }
+
+  .title-3 {
+    font-size: var(--font-h3);
+    line-height: 120%;
+  }
+
+  .description {
+    font-size: var(--font-descr);
+    line-height: 200%;
   }
 
   /* header */
@@ -374,7 +386,7 @@
 
   /* hero */
   .hero {
-    margin-bottom: 37px;
+    margin-bottom: 38px;
   }
 
   .slider {
@@ -390,22 +402,28 @@
   }
 
   .hero__title {
-    font-size: 50px;
-    line-height: calc((61 / 50) * 100%);
+    font-size: var(--font-h1);
+    line-height: var(--line-height-h1);
   }
 
   .hero__text {
+    margin-bottom: 62px;
     font-size: 18px;
     line-height: calc((22 / 18) * 100%);
   }
 
   /* about */
+  .about {
+    margin-bottom: 85px;
+  }
+
   .about__description-main {
     margin-bottom: 54px;
   }
 
   .about__left {
     padding-top: 453px;
+    background-position: center;
     border-radius: var(--border-radius);
   }
 
@@ -419,6 +437,16 @@
     border-radius: var(--border-radius);
   }
 
+  .hero__btn {
+    font-size: 23px;
+    line-height: 120%;
+    text-align: center;
+  }
+
+   .about__btn {
+    font-size: 16px;
+    line-height: 120%;
+  }
   .about__item {
     padding: 35px 21px 32px 169px;
     background-position: 7% 50%;
@@ -435,7 +463,7 @@
 
   /* .how-we-work */
   .how-we-work {
-    margin-bottom: 50px;
+    margin-bottom: 51px;
   }
 
   .tab {
@@ -456,6 +484,9 @@
     height: 50%;
   }
 
+  .how-we-work__subtitle {
+    margin-bottom: 10px;
+  }
   .how-we-work__bg-wrap {
     width: 100%;
   }
@@ -479,15 +510,19 @@
 
   /* faq */
   .faq {
-    margin-bottom: 110px;
+    margin-bottom: 115px;
   }
 
   .faq__button-text {
+    font-size: var(--font-faq-sub);
+    line-height: 160%;
     width: 90%
   }
 
-  .faq-icon {
-    width: 10%;
+  .faq__icon--3,
+  .faq__icon--5 {
+    transform: translateY(-9px);
+
   }
 
   /* footer */
@@ -516,6 +551,10 @@
     --font-h3: 20px;
     --font-descr: 14px;
     --font-faq-sub: 18px;
+  }
+
+  .container {
+    padding: 0 30px;
   }
 
   .title-2 {
@@ -555,43 +594,7 @@
     text-align: center;
   }
 
-   .about__btn {
-    font-size: 16px;
-    line-height: 120%;
-  }
-
-  .about__left {
-    padding-top: 250px;
-  }
-
-  .about__left-wrapper {
-    padding: 30px;
-  }
-
-  .about__description-left {
-    font-size: 14px;
-    line-height: 120%;
-  }
-
-  /* how-we-work */
-  .tab__link {
-    font-size: 16px;
-    line-height: 120%;
-  }
-
-  .faq__button-text {
-    font-size: var(--font-faq-sub);
-    line-height: 160%;
-  }
-}
-
-@media (max-width: 600px) {
- /* global */
- .container {
-  padding: 0 30px;
- }
-
- /* about */
+  /* about */
   .about__left {
     padding: 0;
     background-image: none;
@@ -604,6 +607,7 @@
     flex-direction: column;
     background-color: var(--white);
   }
+
   .about__left-wrapper::before {
     margin-bottom: 54px;
     content: "";
@@ -619,6 +623,8 @@
     margin-right: 0;
     margin-bottom: 47px;
     font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
     color: var(--black);
   }
 
@@ -651,6 +657,25 @@
   .about__item-2::before {
     background-image: url(../img/about-icon-2_768.svg);
   }
+
+
+   .about__btn {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  /* how-we-work */
+  .tab__link {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .faq__button-text {
+    margin-right: 20px;
+    font-size: var(--font-faq-sub);
+    line-height: 160%;
+  }
+
 
   /* footer */
   .footer__container {
@@ -868,7 +893,7 @@
   }
 
   .how-we-work__subtitle {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
 
   .how-we-work__btn--more {
@@ -897,11 +922,10 @@
   }
 
   .faq__title {
-    margin-bottom: 16px;
+    margin-bottom: 15px;
   }
 
   .faq__button-text {
-    padding-right: 10px;
     font-weight: 500;
     font-size: 14px;
     line-height: calc((24 / 14) * 100%);
@@ -911,6 +935,10 @@
     width: 30px;
     height: 30px;
   }
+
+  .faq__icon--3, .faq__icon--5 {
+    transform: translateY(0);
+}
 
   /* footer */
   .footer__container {
