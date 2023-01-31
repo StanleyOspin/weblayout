@@ -105,10 +105,11 @@
   .about__item:not(:last-child) {
     margin-bottom: 31px;
   }
-
 }
 
-@media (max-width: 1292px) {
+
+
+@media (max-width: 1294px) {
   :root {
     --font-h1: 60px;
     --line-height-h1: calc((73 / 60) * 100%);
