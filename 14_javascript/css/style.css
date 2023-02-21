@@ -173,7 +173,7 @@ body {
 .header {
   min-height: 100px;
   border-radius: 0px 0px 32px 32px;
-  background: #FFFFFF;
+  background: var(--white);
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
   margin-bottom: 50px;
 }
@@ -303,24 +303,32 @@ body {
   max-width: 24px;
   height: 24px;
   background-color: transparent;
-  outline: 1px solid transparent;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
   border: 0;
+  transition: outline-color 0.3s ease-in-out;
 }
 
 .active .form-search-header__btn svg path {
-  stroke: var(--orange)
+  stroke: var(--orange);
+  transition: stroke 0.3s ease-in-out
 }
 
 .active .form-search-header__btn svg rect {
   fill: var(--orange);
+  transition: fill 0.3s ease-in-out
 }
 
-.active .form-search-header__btn:focus svg path {
-  stroke: var(--orange)
+.active .form-search-header__btn:focus {
+  outline-color: var(--orange);
 }
 
-.active .form-search-header__btn:focus svg rect {
-  fill: var(--orange);
+ .active .form-search-header__btn:focus svg path {
+  stroke: var(--black)
+}
+
+ .active .form-search-header__btn:focus svg rect {
+  fill: var(--black);
 }
 
 .active .search-closed__btn {
@@ -331,10 +339,10 @@ body {
   cursor: pointer;
   background-color: transparent;
   border: 0;
-  outline: 1px solid transparent;
+  outline: 2px solid transparent;
   outline-offset: 2px;
   opacity: 1;
-  transition: outline 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: outline-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .active .search-closed__btn svg circle {
@@ -346,11 +354,11 @@ body {
 }
 
 .active .search-closed__btn:focus {
-  outline: 1px solid var(--orange) ;
+  outline-color: var(--orange) ;
 }
 
 .active .search-closed__btn:hover {
-  outline: 1px solid transparent;
+  outline-color: transparent;
 }
 
 .active .search-closed__btn:hover svg circle {
@@ -921,6 +929,10 @@ body {
   border-top: 1px solid transparent;
   border-bottom: 1px solid var(--light-grey);
   transition: border-color 0.3s ease-in-out;
+}
+
+.faq__button:focus {
+  outline: 1px solid transparent;
 }
 
 .faq__item:first-child {
