@@ -153,21 +153,21 @@
     </section>
     <section class="how-we-work">
       <div class="container how-we-work__container">
-        <h2 class="title-2 how-we-work__title">Как мы работаем</h2>
+        <h2 class="title-2 how-we-work__title">Как мы&nbsp;работаем</h2>
         <div class="how-we-work__wrapper">
           <div class="tab">
             <ul class="list tab__list flex">
               <li class="tab__item">
-                <button class="link tab__btn tab__btn--active" data-path="one">1&nbsp;шаг</button>
+                <button class="link tab__btn tab__btn--active" data-path="one" aria-label="Шаг первый">1&nbsp;шаг</button>
               </li>
               <li class="tab__item">
-                <button class="link tab__btn"  data-path="two">2&nbsp;шаг</button>
+                <button class="link tab__btn"  data-path="two" aria-label="Шаг второй">2&nbsp;шаг</button>
               </li>
               <li class="tab__item">
-                <button class="link tab__btn" data-path="three">3&nbsp;шаг</button>
+                <button class="link tab__btn" data-path="three" aria-label="Шаг третий">3&nbsp;шаг</button>
               </li>
               <li class="tab__item">
-                <button class="link tab__btn"  data-path="four">4&nbsp;шаг</button>
+                <button class="link tab__btn"  data-path="four" aria-label="Шаг четвертый">4&nbsp;шаг</button>
               </li>
             </ul>
           </div>
@@ -238,9 +238,9 @@
                 <h3 class="title-3 how-we-work__subtitle">Инспектируем все этапы работ</h3>
                 <p class="description how-we-work__description">Высокий уровень вовлечения представителей целевой
                   аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта
-                  напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая
+                  напрямую зависит от&nbsp;дальнейших направлений развития. Разнообразный и&nbsp;богатый опыт говорит нам, что новая
                   модель организационной деятельности говорит
-                  о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное
+                  о&nbsp;возможностях системы массового участия. Принимая во&nbsp;внимание показатели успешности, постоянное
                   информационно-пропагандистское обеспечение нашей деятельности позволяет.
                 </p>
                 <div class="how-we-work__btn-block flex">
@@ -417,17 +417,17 @@
         <div class="footer__middle">
           <h2 class="title-2 footer__title">Оставить заявку</h2>
           <form class="form footer__form flex" action="https://jsonplaceholder.typicode.com/posts" method="POST" aria-label="Форма ввода данных">
-            <label class="visually-hidden" for="usarname">Введите данные Фамилия, имя и&nbsp;отчество</label>
+            <label class="visually-hidden" for="usarname"></label>
             <input class="footer__input name" type="text" id="usarname" placeholder="Фамилия, имя и&nbsp;отчество*" name="name" required>
-            <label class="visually-hidden" for="email">Введите свой email</label>
+            <label class="visually-hidden" for="email"></label>
             <input class="footer__input email" type="email" id="email" placeholder="Email*" name="email" required>
-            <label class="visually-hidden" for="message">Отправить сообщение</label>
+            <label class="visually-hidden" for="message"></label>
             <textarea class="footer__input msg" name="text" id="message" placeholder="Сообщение" ></textarea>
             <div class="footer__submit flex">
               <button class="btn footer__btn" type="submit">Отправить данные</button>
               <label class="label footer__label flex" >
                 <input class="footer__input-checkbox" type="checkbox" name="checkbox" tabindex="0" checked>
-                <span class="footer__label-checkbox" tabindex="0" aria-label="Поле - поставить галочку о согласии на обработку данных"></span>
+                <span class="footer__label-checkbox" tabindex="0" role="checkbox" aria-checked="true" aria-label="Cогласен на обработку данных"></span>
                 <span class="description footer__label-description">Согласен на&nbsp;обработку данных</span>
               </label>
             </div>

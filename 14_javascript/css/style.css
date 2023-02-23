@@ -691,6 +691,7 @@ body {
   padding: 0;
   outline: transparent;
   border: 0;
+  cursor: pointer;
   background-color: transparent;
   transition: outline 0.3s ease-in-out, color 0.3s ease-in-out;
 }
@@ -948,6 +949,19 @@ body {
   margin-bottom: 30px;
 }
 
+.is-active .faq__button .faq__icon {
+  transform: rotate(45deg);
+}
+
+.is-active .faq__button .faq__icon ellipse {
+  fill: var(--light-grey);
+  transition: fill 0.3s ease-in-out;
+}
+
+.is-active .faq__button .faq__icon path {
+  fill: var(--black);
+}
+
 .faq__icon ellipse {
   fill: var(--light-grey);
   transition: fill 0.3s ease-in-out;
@@ -970,6 +984,10 @@ body {
   outline: none;
 }
 
+.faq__item:focus-within .faq__button-text {
+  color: var(--orange);
+}
+
 .is-active:focus-within {
   border-color: var(--light-grey);
 }
@@ -990,11 +1008,8 @@ body {
   fill: var(--black);
 }
 
-.faq__item:first-child .faq__button:focus {
-  border-color: var(--orange);
-}
 
-.faq__button:focus .faq__button-text {
+.faq__button:focus-within .faq__button-text {
   color: var(--orange);
 }
 
@@ -1010,31 +1025,44 @@ body {
   border-color: var(--orange);
 }
 
+.faq__item:hover .faq__button-text {
+  color: var(--orange);
+}
+
 .is-active:hover {
   border-color: var(--light-grey);
 }
 
-.faq__item:first-child .faq__button:hover {
-  border-color: var(--orange);
-}
-
-.faq__button:hover .faq__button-text {
+.faq__item:hover  .faq__button-text {
   color: var(--orange);
 }
 
-.faq__button:hover .faq__icon ellipse {
+.faq__item:hover .faq__icon ellipse {
   fill: var(--orange);
 }
 
-.faq__button:hover .faq__icon path {
+.faq__item:hover .faq__icon path {
   fill: var(--white);
+}
+
+.is-active:hover .faq__button .faq__button-text {
+  color: var(--black);
+}
+
+.is-active:hover .faq__button .faq__icon ellipse {
+  fill: var(--light-grey);
+  transition: fill 0.3s ease-in-out;
+}
+
+.is-active:hover .faq__button .faq__icon path {
+  fill: var(--black);
 }
 
 .faq__item:active {
   border-color: var(--light-grey);
 }
 
-.faq__button:active .faq__button-text {
+.faq__item:active .faq__button-text {
   color: var(--black);
 }
 
@@ -1290,8 +1318,8 @@ body {
 [type=checkbox]:checked+.footer__label-checkbox:before {
   content: url("../img/checkbox.svg");
   position: absolute;
-  width: 4px;
-  height: 7px;
+  width: 0;
+  height: 0;
   top: -5px;
   left: 1px;
 }
