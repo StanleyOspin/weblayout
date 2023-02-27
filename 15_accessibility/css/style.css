@@ -94,8 +94,9 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: var(--font-descr);
-  line-height: 20px;
+  line-height: 125%;
   border-radius: 16px;
+  color: var(--black);
   background-color: transparent;
   outline: transparent;
   border: 0;
@@ -323,11 +324,11 @@ body {
   outline-color: var(--orange);
 }
 
- .active .form-search-header__btn:focus svg path {
+.active .form-search-header__btn:focus svg path {
   stroke: var(--black)
 }
 
- .active .form-search-header__btn:focus svg rect {
+.active .form-search-header__btn:focus svg rect {
   fill: var(--black);
 }
 
@@ -354,7 +355,7 @@ body {
 }
 
 .active .search-closed__btn:focus {
-  outline-color: var(--orange) ;
+  outline-color: var(--orange);
 }
 
 .active .search-closed__btn:hover {
@@ -470,7 +471,10 @@ body {
   margin: 0 10px;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
   bottom: 26px;
 }
 
@@ -692,7 +696,9 @@ body {
   outline: transparent;
   border: 0;
   cursor: pointer;
+  font-weight: 400;
   background-color: transparent;
+  border-radius: 0;
   transition: outline 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
@@ -803,26 +809,26 @@ body {
   min-height: 60px;
   font-weight: 400;
   color: var(--black);
-  outline: 1px solid var(--black);
+  border: 1px solid var(--black);
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-color 0.3s ease-in-out;
 }
 
 .how-we-work__btn--agreement:focus {
   background-color: var(--grey);
   color: var(--white);
-  outline-color: transparent;
+  border-color: transparent;
 }
 
 .how-we-work__btn--agreement:hover {
   background-color: var(--grey);
   color: var(--white);
-  outline-color: transparent;
+  border-color: transparent;
 }
 
 .how-we-work__btn--agreement:active {
   background-color: var(--black);
   color: var(--white);
-  outline-color: transparent;
+  border-color: transparent;
 }
 
 .how-we-work__block {
@@ -840,7 +846,7 @@ body {
   0% {
     display: none;
     opacity: 0;
-    }
+  }
 
   1% {
     display: flex;
@@ -1033,7 +1039,7 @@ body {
   border-color: var(--light-grey);
 }
 
-.faq__item:hover  .faq__button-text {
+.faq__item:hover .faq__button-text {
   color: var(--orange);
 }
 
