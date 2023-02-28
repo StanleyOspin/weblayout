@@ -16,7 +16,8 @@ closed__btn.addEventListener('click', function () {
 let burger = document.querySelector('.burger');
 let menu = document.querySelector('.header__nav');
 let menuLinks = menu.querySelectorAll('.header__link');
-let btn = document.getElementById('shift-menu');
+let btn = document.getElementById('shift__menu');
+
 
 burger.addEventListener('click',
 
@@ -27,11 +28,17 @@ burger.addEventListener('click',
     menu.classList.toggle('header__nav--active');
 
     document.body.classList.toggle('stop-scroll');
-
-    btn.ariaLabel = 'Закрыть меню навигации';
-
-
 })
+
+
+burger.addEventListener('click', () => {
+
+    let n = 'true' === burger.getAttribute('aria-expanded');
+    burger.setAttribute('aria-expanded', !n),
+      n
+        ? burger.setAttribute('aria-label', 'Открыть навигацию')
+        : burger.setAttribute('aria-label', 'Закрыть навигацию');
+  })
 
 
 menuLinks.forEach(function (el) {
@@ -46,8 +53,6 @@ menuLinks.forEach(function (el) {
     btn.ariaLabel = 'Открыть меню навигации';
   })
 })
-
-
 
 
 let swiper = new Swiper('.swiper', {
