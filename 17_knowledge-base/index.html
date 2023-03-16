@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Base Knowledge</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="https://yastatic.net/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./libs/choices.min.css">
+  <link rel="stylesheet" href="./css/simplebar.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="content__wrapper flex">
+      <form class="my__checkbox flex" aria-label="Выбрать категорию">
+        <h2 class="custom-checkbox__header">Категории:</h2>
+        <label class="custom-checkbox" for="my__box-1" tabindex="0">
+          <input class="hidden-checkbox" type="checkbox" name="check" id="my__box-1">
+          <span class="checkbox"></span>
+          Динозавры
+        </label>
+        <label class="custom-checkbox" for="my__box-2" tabindex="0">
+          <input class="hidden-checkbox" type="checkbox" name="check" id="my__box-2">
+          <span class="checkbox"></span>
+          Медведи
+        </label>
+        <label class="custom-checkbox" for="my__box-3" tabindex="0">
+          <input class="hidden-checkbox" type="checkbox" name="check" id="my__box-3">
+          <span class="checkbox"></span>
+          Косули
+        </label>
+        <label class="custom-checkbox" for="my__box-4" tabindex="0">
+          <input class="hidden-checkbox" type="checkbox" name="check" id="my__box-4">
+          <span class="checkbox"></span>
+          Лисы
+        </label>
+        <label class="custom-checkbox" for="my__box-5" tabindex="0">
+          <input class="hidden-checkbox" type="checkbox" name="check" id="my__box-5">
+          <span class="checkbox"></span>
+          Волки
+        </label>
+        <label class="custom-checkbox" for="my__box-6" tabindex="0">
+          <input class="hidden-checkbox" type="checkbox" name="check" id="my__box-6">
+          <span class="checkbox"></span>
+          Олени и&nbsp;лоси
+        </label>
+      </form>
+
+
+
+      <form class="my__select" aria-label="Форма выбора материала">
+        <select class="js-choice">
+          <option value="" >Материал</option>
+          <option>Древесина</option>
+          <option>Металл</option>
+          <option>Камень</option>
+          <option>Пластик</option>
+          <option>Композитный</option>
+          <option>Гипс</option>
+        </select>
+      </form>
+
+      <div class="map" id="myMap1"></div>
+
+      <div class="customscroll" data-simplebar>
+        Сложно сказать, почему многие известные личности представлены в&nbsp;исключительно положительном свете. Лишь
+        активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями.
+        Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что высокотехнологичная концепция общественного уклада
+        представляет
+        собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая
+        примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные
+        особенности
+        картины в&nbsp;целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько
+        очевидна, что социально-экономическое развитие, а&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;&mdash;
+        безусловно открывает новые горизонты для первоочередных требований.
+      </div>
+
+      <form action="#" class="form order__form flex" id="form" method="POST" enctype="multipart/form-data"
+        autocomplete="off">
+        <label class="form__label" for="name">
+          <input class="form__input input__name" name="Имя" type="text" placeholder="Имя*" id="name" data-validate-field="name" autocomplete="off">
+        </label>
+        <label class="form__label" for="phone">
+          <input class="form__input input__tel" name="tel" type="tel" placeholder="Телефон*" id="phone" data-validate-field="tel"
+            data-validate-rules="phone" autocomplete="off">
+        </label>
+        <label class="form__label" for="email">
+          <input class="form__input input__mail" name="email" type="email" placeholder="E-mail*" id="email"
+            data-validate-field="mail" autocomplete="off">
+        </label>
+        <button class="btn" aria-label="Заказать">Заказать</button>
+      </form>
+
+      <div class="mytooltip">
+        <p class="text">
+          Следует отметить, <br> что социально-экономическое развитие способствует повышению качества переосмысления
+          внешнеэкономических политик.
+          <span class="help" data-tippy-content="Глава&nbsp;2, страница 176 ">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z" />
+            </svg>
+
+          </span>
+        </p>
+      </div>
+
+
+    </div>
+    <script src="./libs/choices.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+    <script src="./libs/simplebar.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="./libs/inputmask.min.js"></script>
+    <script src="./libs/just-validate.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="js/script.js"></script>
+  </div>
+</body>
+
+</html>
