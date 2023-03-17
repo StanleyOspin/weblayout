@@ -21,7 +21,7 @@ function init() {
     balloonContentBody: 'X округ Парижа, улица дю Фобур Сен Дени  54'
   }, {
     iconLayout: 'default#image',
-    iconImageHref: '../img/my-pointer.svg',
+    iconImageHref: './img/my-pointer.svg',
     iconImageSize: [28, 40],
     iconImageOffset: [-20, -30]
   });
