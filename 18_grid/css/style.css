@@ -181,7 +181,7 @@ body {
   outline-color: var(--white);
 }
 
-.nav {
+.header__nav {
   -webkit-transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   -o-transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
