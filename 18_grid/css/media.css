@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (max-width: 1500px) {
 
   /* advantages */
@@ -57,7 +64,7 @@
     gap: 11px;
   }
 
-  .advantages-top--img {
+  .advantages-picture {
     background-image: url("../img/advantages-img-690.svg");
     width: 211px;
     height: 187px;
@@ -82,7 +89,7 @@
     background-size: cover;
   }
 
-  .card__content--top {
+  .card__content-top {
     margin-bottom: 28px;
   }
 
@@ -141,7 +148,7 @@
     align-items: flex-start;
   }
 
-  .advantages-top--img {
+  .advantages-picture {
     background-image: url("../img/advantages-img-510.svg");
     width: 150px;
     height: 134px;
@@ -189,7 +196,7 @@
     padding: 31px 15px 30px 30px;
   }
 
-  .card__content--top {
+  .card__content-top {
     margin-bottom: 33px;
   }
 
@@ -228,10 +235,11 @@
   .header__nav {
     position: absolute;
     right: -320px;
-    top: -155%;
-    padding-top: 50px;
+    top: -200%;
+    padding-top: 80px;
+    padding-bottom: 80px;
     width: 320px;
-    background-color: #ffffff;
+    background: #2e2b44;
     border-radius: 0 0 10px 10px;
     z-index: 2;
     visibility: hidden;
@@ -249,7 +257,7 @@
   .header__link {
     display: block;
     padding: 25px;
-    color: #666666;
+    color: white;
   }
 
   .burger {
@@ -303,6 +311,8 @@
     bottom: -3px;
     border: 1px solid white;
     opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out;
   }
 
@@ -313,7 +323,7 @@
     -webkit-transform: translateY(0) rotate(45deg);
     -ms-transform: translateY(0) rotate(45deg);
     transform: translateY(0) rotate(45deg);
-    background-color: #666666;
+
   }
 
   .burger--active .burger__line:nth-child(2) {
@@ -324,7 +334,7 @@
     -webkit-transform: translateY(0) rotate(-45deg);
     -ms-transform: translateY(0) rotate(-45deg);
     transform: translateY(0) rotate(-45deg);
-    background-color: #666666;
+
   }
 
   .header__nav--active {
@@ -377,7 +387,7 @@
     padding-bottom: 49px;
   }
 
-  .advantages-top--img {
+  .advantages-picture {
     display: none;
   }
 
@@ -461,7 +471,7 @@
     background-image: url("../img/courses-img-4-320.svg");
   }
 
-  .card__content--top {
+  .card__content-top {
     width: 80%;
   }
 
@@ -483,4 +493,8 @@
     max-width: 180px;
   }
 
+  .logo__picture {
+    width: 72px;
+    height: 16px;
+  }
 }

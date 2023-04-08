@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -169,12 +176,21 @@ body {
 .header__logo {
   margin: 0;
   margin-right: auto;
-  height: 21px;
   outline: 1px solid transparent;
   outline-offset: 4px;
   -webkit-transition: outline-color 0.3s ease-in-out;
   -o-transition: outline-color 0.3s ease-in-out;
   transition: outline-color 0.3s ease-in-out;
+}
+
+.logo__picture {
+  margin: 0;
+  background-image: url(../img/skillbox-logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 94px;
+  height: 21px;
 }
 
 .header__logo:focus {
@@ -300,7 +316,7 @@ body {
   background: var(--white);
 }
 
-.advantages-top--img {
+.advantages-picture {
   position: relative;
   background-image: url("../img/advantages-img.svg");
   background-repeat: no-repeat;
@@ -468,8 +484,28 @@ body {
 
 .duration {
   position: absolute;
-  top: 10px;
-  right: 4px;
+  top: 12px;
+  right: 9px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clocks {
+  margin: 0;
+  margin-right: 5px;
+  background-image: url(../img/clocks.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}
+
+.hours {
+  margin: 0;
+  color: white;
+  line-height: 117%;
 }
 
 .card__content {
@@ -492,7 +528,7 @@ body {
   border-radius: 0 0 20px 20px;
 }
 
-.card__content--top {
+.card__content-top {
   margin-bottom: 20px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -581,9 +617,16 @@ body {
 }
 
 .footer__copy {
-  width: 100%;
-  text-align: center;
-  -webkit-transform: translateX(-1px);
-      -ms-transform: translateX(-1px);
-          transform: translateX(-1px);
+  padding-top: 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  gap: 3px;
+  font-size: 13px;
+  line-height: 115%;
+}
+
+.footer__copy--r {
+  color: rgba(63, 42, 255, 1);
 }
