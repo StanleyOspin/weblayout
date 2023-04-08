@@ -410,7 +410,6 @@ body {
 
 .simplebar-scrollbar::before {
   width: 6px;
-  height: 70px;
   background: var(--gold);
   opacity: 1;
 }
@@ -447,6 +446,7 @@ body {
   line-height: 120%;
   border: 1px solid transparent;
   border-radius: 10px;
+  background-color: var(--white);
   -webkit-transition: border-color 0.3s ease-in-out, background-color .3s ease-in-out;
   -o-transition: border-color 0.3s ease-in-out, background-color .3s ease-in-out;
   transition: border-color 0.3s ease-in-out, background-color .3s ease-in-out;
