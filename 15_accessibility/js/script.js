@@ -30,7 +30,6 @@ burger.addEventListener('click',
 
     btn.ariaLabel = 'Закрыть меню навигации';
 
-
 })
 
 
@@ -44,6 +43,7 @@ menuLinks.forEach(function (el) {
     document.body.classList.remove('stop-scroll');
 
     btn.ariaLabel = 'Открыть меню навигации';
+    
   })
 })
 

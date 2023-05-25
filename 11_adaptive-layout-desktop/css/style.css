@@ -510,14 +510,14 @@ body {
 
 /* how-we-work */
 .how-we-work {
-  margin-bottom: 109px;
+  margin-bottom: 110px;
 }
 .how-we-work__container {
   min-height: 646px;
 }
 
 .how-we-work__title {
-  margin-bottom: 49px;
+  margin-bottom: 51px;
 }
 
 .tab {
@@ -948,7 +948,7 @@ body {
 
 .msg {
   padding: 14px 0px 14px 24px;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
   min-height: 150px;
   resize: none;
 }
@@ -1072,7 +1072,7 @@ body {
 
 .footer__description {
   margin: 0;
-  padding-top: 89px;
+  padding-top: 88px;
   padding-bottom: 87px;
   line-height: 32px;
   max-width: 363px;
